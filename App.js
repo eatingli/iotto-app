@@ -30,13 +30,9 @@ export default class App extends Component {
 
     send(datachannelId, value) {
         let server = {
-            ip: '192.168.1.169',
-            port: 3000
-        }
-        let device = {
-            id: 'H1PP5SS0Z',
-            key: 'f2b5f8b8ba0f4cadf35484227899d618b18d4862e87c36944a1dab0e58949bcf',
-            selected: true
+            // ip: 'raspberrypi.local',
+            ip: '192.168.1.166',
+            port: 3001
         }
         let now = Date.now();
         setTimeout(() => {
