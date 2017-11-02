@@ -14,6 +14,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import Button from 'apsl-react-native-button'
+import Orientation from 'react-native-orientation';
 
 export default class App extends Component {
 
@@ -25,7 +26,7 @@ export default class App extends Component {
     }
 
     componentDidMount() {
-
+        Orientation.lockToLandscape();
     }
 
     send(datachannelId, value) {
