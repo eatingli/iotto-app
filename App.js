@@ -31,7 +31,7 @@ export default class App extends Component {
     send(datachannelId, value) {
         let server = {
             // ip: 'raspberrypi.local',
-            ip: '192.168.1.166',
+            ip: '192.168.1.222',
             port: 3001
         }
         let now = Date.now();
