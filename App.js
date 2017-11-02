@@ -11,6 +11,7 @@ import {
     Text,
     View,
     Alert,
+    Vibration,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import Button from 'apsl-react-native-button'
@@ -35,6 +36,7 @@ export default class App extends Component {
             ip: '192.168.1.222',
             port: 3001
         }
+        Vibration.vibrate(20);
         let now = Date.now();
         setTimeout(() => {
             fetch(`http://${server.ip}:${server.port}/api/data/datachannelId/${datachannelId}/value/${value}`, {
